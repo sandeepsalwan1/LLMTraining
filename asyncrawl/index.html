@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/sun-wukong-calligraphie_180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/media/sun-wukong-calligraphie_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/media/sun-wukong-calligraphie_16.png">
+  <link rel="mask-icon" href="/media/sun-wukong-calligraphie.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inconsolata:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.piprime.fr","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.22.0","exturl":true,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12,"onmobile":false},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":20,"unescape":false,"preload":false,"trigger":"auto","path":"search.xml","field":"post","content":true,"format":"html"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="header.post-header h1 a.post-edit-link {display: none;} Asymptote is a powerful descriptive vector graphics language that provides a natural coordinate-based framework for technical drawing. Labels an">
+<meta property="og:type" content="website">
+<meta property="og:title" content="An Extensive Asymptote Gallery">
+<meta property="og:url" content="https://blog.piprime.fr/asymptote/">
+<meta property="og:site_name" content="PIPRIME.FR BLOG">
+<meta property="og:description" content="header.post-header h1 a.post-edit-link {display: none;} Asymptote is a powerful descriptive vector graphics language that provides a natural coordinate-based framework for technical drawing. Labels an">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.piprime.fr/media/sun-wukong-calligraphie.png">
+<meta property="article:published_time" content="2011-04-30T22:49:15.000Z">
+<meta property="article:modified_time" content="2025-04-20T10:26:36.005Z">
+<meta property="article:author" content="Philippe Ivaldi">
+<meta property="article:tag" content="computer, science, blog, thoughts, asymptote, linux, debian, french, golang, sql, javascript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.piprime.fr/media/sun-wukong-calligraphie.png">
+
+
+<link rel="canonical" href="https://blog.piprime.fr/asymptote/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://blog.piprime.fr/asymptote/","path":"asymptote/index.html","title":"An Extensive Asymptote Gallery"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>An Extensive Asymptote Gallery | PIPRIME.FR BLOG
+</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">PIPRIME.FR BLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Live fully to honor life</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-posts"><a href="/posts/" rel="section"><i class="fa fa-th-list fa-fw"></i>Posts</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-asymptote"><a href="/asymptote/" rel="section"><i class="fa fa-images fa-fw"></i>Asymptote</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories<span class="badge">29</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="tags fa-fw"></i>Tags<span class="badge">129</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">523</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="sitemap fa-fw"></i>Sitemap</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Extensive-Asymptote-Gallery"><span class="nav-number">1.</span> <span class="nav-text">🔗Extensive Asymptote Gallery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Browse-by-Topics"><span class="nav-number">1.1.</span> <span class="nav-text">🔗Browse by Topics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Browse-by-Categories"><span class="nav-number">1.2.</span> <span class="nav-text">🔗Browse by Categories</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Browse-by-Tags"><span class="nav-number">1.3.</span> <span class="nav-text">🔗Browse by Tags</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Philippe Ivaldi"
+      src="/media/sun-wukong-calligraphie_100.png">
+  <p class="site-author-name" itemprop="name">Philippe Ivaldi</p>
+  <div class="site-description" itemprop="description">Another earthly blog about computer science and various thoughts</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">523</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">29</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">129</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3BpdmFsZGk=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;pivaldi"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmZyb21ibG9nMUBwaXByaW1lLmZy" title="E-Mail → mailto:fromblog1@piprime.fr"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9idXltZWFjb2ZmZWUuY29tL3BpdmFsZGk=" title="Buymeacoffee → https:&#x2F;&#x2F;buymeacoffee.com&#x2F;pivaldi"><i class="fa fa-coffee fa-fw"></i>Buymeacoffee</span>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+        <div class="pjax">
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+    <ul class="sub-menu menu">
+      
+  <li class="menu-item menu-item-generalities"><a href="/asymptote/generalities" rel="section">Generalities</a></li>
+
+
+      
+  <li class="menu-item menu-item-opacity"><a href="/asymptote/opacity" rel="section">Opacity</a></li>
+
+
+      
+  <li class="menu-item menu-item-animations"><a href="/asymptote/animations" rel="section">Animations</a></li>
+
+
+      
+  <li class="menu-item menu-item-graph"><a href="/asymptote/graph" rel="section">Graph</a></li>
+
+
+      
+  <li class="menu-item menu-item-geometry"><a href="/asymptote/geometry" rel="section">Geometry</a></li>
+
+
+      
+  <li class="menu-item menu-item-three"><a href="/asymptote/three" rel="section">Three</a></li>
+
+
+      
+  <li class="menu-item menu-item-graph3d"><a href="/asymptote/graph3" rel="section">Graph3D</a></li>
+
+
+      
+  <li class="menu-item menu-item-solids"><a href="/asymptote/solids" rel="section">Solids</a></li>
+
+
+      
+  <li class="menu-item menu-item-tube"><a href="/asymptote/tube" rel="section">Tube</a></li>
+
+
+      
+  <li class="menu-item menu-item-fractales"><a href="/asymptote/fractales" rel="section">Fractales</a></li>
+
+
+      
+  <li class="menu-item menu-item-lsystem"><a href="/asymptote/lsystem" rel="section">Lsystem</a></li>
+
+
+      
+  <li class="menu-item menu-item-trembling"><a href="/asymptote/trembling" rel="section">Trembling</a></li>
+
+
+      
+  <li class="menu-item menu-item-tiling"><a href="/asymptote/tiling" rel="section">Tiling</a></li>
+
+
+      
+  <li class="menu-item menu-item-ccw"><a href="/asymptote/ccw" rel="section">Ccw</a></li>
+
+
+      
+  <li class="menu-item menu-item-randomwalk"><a href="/asymptote/randomwa" rel="section">Randomwalk</a></li>
+
+
+      
+  <li class="menu-item menu-item-various"><a href="/asymptote/various" rel="section">Various</a></li>
+
+
+    </ul>
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">An Extensive Asymptote Gallery<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3BpdmFsZGkvYmxvZy5waXByaW1lLmZyL2VkaXQvbWFzdGVyL2hleG8vc291cmNlL2FzeW1wdG90ZS9pbmRleC5tZA==" title="Edit this post"><i class="fa fa-pen-nib"></i></span>
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><style>header.post-header h1 a.post-edit-link {display: none;}</style>
+<p>Asymptote is a powerful descriptive vector graphics language that
+provides a natural coordinate-based framework for technical
+drawing. Labels and equations are typeset with LaTeX, for high-quality
+PostScript output.</p>
+<p>A major advantage of Asymptote over other graphics packages is that it
+is a programming language, as opposed to just a graphics program.
+Read more from the <span class="exturl" data-url="aHR0cDovL2FzeW1wdG90ZS5zb3VyY2Vmb3JnZS5uZXQv">Official Web Site of Asymptote<i class="fa fa-external-link-alt"></i></span>.</p>
+<h2 id="Extensive-Asymptote-Gallery"><a class="header-anchor" href="#Extensive-Asymptote-Gallery">🔗</a>Extensive Asymptote Gallery</h2>
+<p>Here is an unofficial extensive gallery of examples.</p>
+<h3 id="Browse-by-Topics"><a class="header-anchor" href="#Browse-by-Topics">🔗</a>Browse by Topics</h3>
+<ul>
+<li><a href="animations">animations</a></li>
+<li><a href="ccw">ccw</a></li>
+<li><a href="fractales">fractales</a></li>
+<li><a href="generalities">generalities</a></li>
+<li><a href="geometry">geometry</a></li>
+<li><a href="graph">graph</a></li>
+<li><a href="graph3">graph3</a></li>
+<li><a href="grid3">grid3</a></li>
+<li><a href="lsystem">lsystem</a></li>
+<li><a href="opacity">opacity</a></li>
+<li><a href="randomwalk">randomwalk</a></li>
+<li><a href="solids">solids</a></li>
+<li><a href="three">three</a></li>
+<li><a href="tiling">tiling</a></li>
+<li><a href="tube">tube</a></li>
+<li><a href="various">various</a></li>
+</ul>
+<h3 id="Browse-by-Categories"><a class="header-anchor" href="#Browse-by-Categories">🔗</a>Browse by Categories</h3>
+<p>Because some topics can be in several categories.</p>
+<ul>
+<li><a href="/asymptote/category-1" rel="nofollow">Animation</a></li>
+<li><a href="/asymptote/category-2" rel="nofollow">Examples 2D</a></li>
+<li><a href="/asymptote/category-3" rel="nofollow">Examples 3D</a></li>
+<li><a href="/asymptote/category-4" rel="nofollow">Fractals</a></li>
+<li><a href="/asymptote/category-5" rel="nofollow">Generalities</a></li>
+<li><a href="/asymptote/category-6" rel="nofollow">Geometry.asy</a></li>
+<li><a href="/asymptote/category-7" rel="nofollow">Graph3.asy</a></li>
+<li><a href="/asymptote/category-8" rel="nofollow">Graph.asy</a></li>
+<li><a href="/asymptote/category-9" rel="nofollow">Grid3.asy</a></li>
+<li><a href="/asymptote/category-10" rel="nofollow">L-System</a></li>
+<li><a href="/asymptote/category-11" rel="nofollow">Miscellaneous</a></li>
+<li><a href="/asymptote/category-12" rel="nofollow">Opacity</a></li>
+<li><a href="/asymptote/category-13" rel="nofollow">Path Orientation</a></li>
+<li><a href="/asymptote/category-14" rel="nofollow">Random Walk (3D)</a></li>
+<li><a href="/asymptote/category-15" rel="nofollow">Solids.asy</a></li>
+<li><a href="/asymptote/category-16" rel="nofollow">Surveys</a></li>
+<li><a href="/asymptote/category-17" rel="nofollow">Three.asy</a></li>
+<li><a href="/asymptote/category-18" rel="nofollow">Tiling</a></li>
+<li><a href="/asymptote/category-19" rel="nofollow">Tube.asy</a></li>
+</ul>
+<h3 id="Browse-by-Tags"><a class="header-anchor" href="#Browse-by-Tags">🔗</a>Browse by Tags</h3>
+<p>Browse with the finest granularity using the tags.</p>
+<ul>
+<li><a href="/asymptote/tag-128" rel="nofollow">#Abscissa</a></li>
+<li><a href="/asymptote/tag-89" rel="nofollow">#Align</a></li>
+<li><a href="/asymptote/tag-228" rel="nofollow">#Animation</a></li>
+<li><a href="/asymptote/tag-177" rel="nofollow">#Arc (3D)</a></li>
+<li><a href="/asymptote/tag-65" rel="nofollow">#Arc</a></li>
+<li><a href="/asymptote/tag-112" rel="nofollow">#Array</a></li>
+<li><a href="/asymptote/tag-157" rel="nofollow">#Arrow (3D)</a></li>
+<li><a href="/asymptote/tag-75" rel="nofollow">#Arrows/Bars</a></li>
+<li><a href="/asymptote/tag-108" rel="nofollow">#Atexit</a></li>
+<li><a href="/asymptote/tag-135" rel="nofollow">#Axis</a></li>
+<li><a href="/asymptote/tag-154" rel="nofollow">#Axis (3D)</a></li>
+<li><a href="/asymptote/tag-91" rel="nofollow">#Basealign</a></li>
+<li><a href="/asymptote/tag-98" rel="nofollow">#Basis</a></li>
+<li><a href="/asymptote/tag-79" rel="nofollow">#Bbox</a></li>
+<li><a href="/asymptote/tag-172" rel="nofollow">#Bsp</a></li>
+<li><a href="/asymptote/tag-107" rel="nofollow">#Buildcycle</a></li>
+<li><a href="/asymptote/tag-64" rel="nofollow">#Circle</a></li>
+<li><a href="/asymptote/tag-81" rel="nofollow">#Clip</a></li>
+<li><a href="/asymptote/tag-118" rel="nofollow">#Conic</a></li>
+<li><a href="/asymptote/tag-142" rel="nofollow">#Contour</a></li>
+<li><a href="/asymptote/tag-119" rel="nofollow">#Coords system</a></li>
+<li><a href="/asymptote/tag-92" rel="nofollow">#Defaultpen</a></li>
+<li><a href="/asymptote/tag-94" rel="nofollow">#Deferred drawing</a></li>
+<li><a href="/asymptote/tag-176" rel="nofollow">#Direction (3D)</a></li>
+<li><a href="/asymptote/tag-88" rel="nofollow">#Direction</a></li>
+<li><a href="/asymptote/tag-129" rel="nofollow">#Distance</a></li>
+<li><a href="/asymptote/tag-4" rel="nofollow">#Draw (2D)</a></li>
+<li><a href="/asymptote/tag-153" rel="nofollow">#Draw (3D)</a></li>
+<li><a href="/asymptote/tag-125" rel="nofollow">#Ellipse</a></li>
+<li><a href="/asymptote/tag-76" rel="nofollow">#Fill/Unfill</a></li>
+<li><a href="/asymptote/tag-67" rel="nofollow">#Fixedscaling</a></li>
+<li><a href="/asymptote/tag-85" rel="nofollow">#Font</a></li>
+<li><a href="/asymptote/tag-85" rel="nofollow">#Fontsize</a></li>
+<li><a href="/asymptote/tag-114" rel="nofollow">#Fractals</a></li>
+<li><a href="/asymptote/tag-96" rel="nofollow">#Fraction</a></li>
+<li><a href="/asymptote/tag-69" rel="nofollow">#Frame</a></li>
+<li><a href="/asymptote/tag-97" rel="nofollow">#Full line</a></li>
+<li><a href="/asymptote/tag-99" rel="nofollow">#Function (creating)</a></li>
+<li><a href="/asymptote/tag-99" rel="nofollow">#Function creation</a></li>
+<li><a href="/asymptote/tag-138" rel="nofollow">#Function (drawing)</a></li>
+<li><a href="/asymptote/tag-138" rel="nofollow">#Function (graphing)</a></li>
+<li><a href="/asymptote/tag-139" rel="nofollow">#Function (implicit)</a></li>
+<li><a href="/asymptote/tag-139" rel="nofollow">#Function (implicit)</a></li>
+<li><a href="/asymptote/tag-103" rel="nofollow">#Geometry</a></li>
+<li><a href="/asymptote/tag-171" rel="nofollow">#Geometry (3D)</a></li>
+<li><a href="/asymptote/tag-113" rel="nofollow">#Graph</a></li>
+<li><a href="/asymptote/tag-151" rel="nofollow">#Graph (3D)</a></li>
+<li><a href="/asymptote/tag-100" rel="nofollow">#Graphic</a></li>
+<li><a href="/asymptote/tag-136" rel="nofollow">#Grid</a></li>
+<li><a href="/asymptote/tag-155" rel="nofollow">#Grid (3D)</a></li>
+<li><a href="/asymptote/tag-127" rel="nofollow">#Hyperbola</a></li>
+<li><a href="/asymptote/tag-73" rel="nofollow">#Interp</a></li>
+<li><a href="/asymptote/tag-140" rel="nofollow">#Interpolate</a></li>
+<li><a href="/asymptote/tag-102" rel="nofollow">#Intersection</a></li>
+<li><a href="/asymptote/tag-132" rel="nofollow">#Inversion</a></li>
+<li><a href="/asymptote/tag-156" rel="nofollow">#Label (3D)</a></li>
+<li><a href="/asymptote/tag-84" rel="nofollow">#Label</a></li>
+<li><a href="/asymptote/tag-83" rel="nofollow">#Labelmargin</a></li>
+<li><a href="/asymptote/tag-87" rel="nofollow">#Layer</a></li>
+<li><a href="/asymptote/tag-143" rel="nofollow">#Legend</a></li>
+<li><a href="/asymptote/tag-70" rel="nofollow">#Length</a></li>
+<li><a href="/asymptote/tag-159" rel="nofollow">#Level set (3D)</a></li>
+<li><a href="/asymptote/tag-158" rel="nofollow">#Light (3D)</a></li>
+<li><a href="/asymptote/tag-97" rel="nofollow">#Line</a></li>
+<li><a href="/asymptote/tag-74" rel="nofollow">#Line type</a></li>
+<li><a href="/asymptote/tag-229" rel="nofollow">#Locus</a></li>
+<li><a href="/asymptote/tag-61" rel="nofollow">#Loop/for/while</a></li>
+<li><a href="/asymptote/tag-191" rel="nofollow">#L-System</a></li>
+<li><a href="/asymptote/tag-93" rel="nofollow">#Margin</a></li>
+<li><a href="/asymptote/tag-104" rel="nofollow">#Markers</a></li>
+<li><a href="/asymptote/tag-130" rel="nofollow">#Mass</a></li>
+<li><a href="/asymptote/tag-230" rel="nofollow">#Morphing</a></li>
+<li><a href="/asymptote/tag-66" rel="nofollow">#Number format</a></li>
+<li><a href="/asymptote/tag-210" rel="nofollow">#Numerical Methods</a></li>
+<li><a href="/asymptote/tag-95" rel="nofollow">#Object</a></li>
+<li><a href="/asymptote/tag-82" rel="nofollow">#Opacity</a></li>
+<li><a href="/asymptote/tag-6" rel="nofollow">#Pair</a></li>
+<li><a href="/asymptote/tag-160" rel="nofollow">#Palette</a></li>
+<li><a href="/asymptote/tag-126" rel="nofollow">#Parabola</a></li>
+<li><a href="/asymptote/tag-122" rel="nofollow">#Parallel</a></li>
+<li><a href="/asymptote/tag-168" rel="nofollow">#Patch</a></li>
+<li><a href="/asymptote/tag-174" rel="nofollow">#Path3</a></li>
+<li><a href="/asymptote/tag-68" rel="nofollow">#Path</a></li>
+<li><a href="/asymptote/tag-109" rel="nofollow">#Pattern</a></li>
+<li><a href="/asymptote/tag-92" rel="nofollow">#Pen</a></li>
+<li><a href="/asymptote/tag-123" rel="nofollow">#Perpendicular</a></li>
+<li><a href="/asymptote/tag-216" rel="nofollow">#Physics</a></li>
+<li><a href="/asymptote/tag-86" rel="nofollow">#Picture</a></li>
+<li><a href="/asymptote/tag-175" rel="nofollow">#Plan</a></li>
+<li><a href="/asymptote/tag-175" rel="nofollow">#Plane</a></li>
+<li><a href="/asymptote/tag-121" rel="nofollow">#Point</a></li>
+<li><a href="/asymptote/tag-71" rel="nofollow">#Point/Dot</a></li>
+<li><a href="/asymptote/tag-181" rel="nofollow">#Polyhedron</a></li>
+<li><a href="/asymptote/tag-72" rel="nofollow">#Position</a></li>
+<li><a href="/asymptote/tag-232" rel="nofollow">#PrimarySchool</a></li>
+<li><a href="/asymptote/tag-163" rel="nofollow">#Projection (3D)</a></li>
+<li><a href="/asymptote/tag-106" rel="nofollow">#Random</a></li>
+<li><a href="/asymptote/tag-188" rel="nofollow">#Recursion</a></li>
+<li><a href="/asymptote/tag-180" rel="nofollow">#Revolution</a></li>
+<li><a href="/asymptote/tag-63" rel="nofollow">#Rotate</a></li>
+<li><a href="/asymptote/tag-124" rel="nofollow">#Segment</a></li>
+<li><a href="/asymptote/tag-161" rel="nofollow">#Shading (3D)</a></li>
+<li><a href="/asymptote/tag-80" rel="nofollow">#Shading</a></li>
+<li><a href="/asymptote/tag-78" rel="nofollow">#Shipout</a></li>
+<li><a href="/asymptote/tag-5" rel="nofollow">#Size</a></li>
+<li><a href="/asymptote/tag-141" rel="nofollow">#Slopefield</a></li>
+<li><a href="/asymptote/tag-179" rel="nofollow">#Solid</a></li>
+<li><a href="/asymptote/tag-165" rel="nofollow">#Sphere</a></li>
+<li><a href="/asymptote/tag-166" rel="nofollow">#Spherical harmonics</a></li>
+<li><a href="/asymptote/tag-145" rel="nofollow">#Struct</a></li>
+<li><a href="/asymptote/tag-152" rel="nofollow">#Surface</a></li>
+<li><a href="/asymptote/tag-134" rel="nofollow">#Tangent</a></li>
+<li><a href="/asymptote/tag-101" rel="nofollow">#Tex/latex features</a></li>
+<li><a href="/asymptote/tag-77" rel="nofollow">#Texpath</a></li>
+<li><a href="/asymptote/tag-186" rel="nofollow">#Tiling</a></li>
+<li><a href="/asymptote/tag-162" rel="nofollow">#Transform (3D)</a></li>
+<li><a href="/asymptote/tag-62" rel="nofollow">#Transform</a></li>
+<li><a href="/asymptote/tag-62" rel="nofollow">#Transform/scale/shift/rotate</a></li>
+<li><a href="/asymptote/tag-62" rel="nofollow">#Transform/scale/shift/rotate/projection</a></li>
+<li><a href="/asymptote/tag-131" rel="nofollow">#Triangle</a></li>
+<li><a href="/asymptote/tag-164" rel="nofollow">#Triple</a></li>
+<li><a href="/asymptote/tag-111" rel="nofollow">#True size</a></li>
+<li><a href="/asymptote/tag-183" rel="nofollow">#Tube</a></li>
+<li><a href="/asymptote/tag-144" rel="nofollow">#Typedef</a></li>
+<li><a href="/asymptote/tag-110" rel="nofollow">#Unitsize</a></li>
+<li><a href="/asymptote/tag-120" rel="nofollow">#Vector</a></li>
+<li><a href="/asymptote/tag-105" rel="nofollow">#Venn diagram</a></li>
+<li><a href="/asymptote/tag-170" rel="nofollow">#Wire frame</a><div class="inner-footer"><p>
+This page was generated by the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3BpdmFsZGkvYXN5bXB0b3RlLWV4ZW1wbGVzLWJ1aWxkZXI=">Asymptote Exemples Builder<i class="fa fa-external-link-alt"></i></span><br>
+Last modified the 2025-04-20 12:26:19<br>
+©2011 <span class="exturl" data-url="aHR0cHM6Ly93d3cucGlwcmltZS5mcg==">Philippe Ivaldi<i class="fa fa-external-link-alt"></i></span></p></div></li>
+</ul>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="Select language">
+      
+        <option value="en" data-href="/asymptote/" selected="">
+          English
+        </option>
+      
+        <option value="fr" data-href="/fr/asymptote/" selected="">
+          Français
+        </option>
+      
+    </select>
+  </div>
+
+  <div class="copyright">
+    &copy; 2011 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Philippe Ivaldi</span>
+  </div>
+  <div class="powered-by">Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL3BpdmFsZGkvYmxvZy5waXByaW1lLmZy" title="Website Source Code" aria-label="Website Source Code"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js","integrity":"sha256-G8ouPAnw4zzMbnAenHnVz6h9XpKbNdOkrqTh7AadyHs="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+  <script class="next-config" data-name="wavedrom" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.5.0/wavedrom.min.js","integrity":"sha256-INLAoJc6quTNfiMWkGZniYO2cxE8mHpddnLow1m6RFs="}}</script>
+  <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.5.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
+  <script src="/js/third-party/tags/wavedrom.js"></script>
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

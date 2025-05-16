@@ -1,0 +1,26 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  15 MAY 2025 18:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\scrollmode\input \nonstopmode\input fig0475_036f00c_.tex
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/.tex File ignored)
+! I can't find file `fig0475_036f00c_.tex'.
+<*> ...put \nonstopmode\input fig0475_036f00c_.tex
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name
+! Emergency stop.
+<*> ...put \nonstopmode\input fig0475_036f00c_.tex
+                                                  
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 15 strings out of 473190
+ 483 string characters out of 5715801
+ 391984 words of memory out of 5000000
+ 23367 multiletter control sequences out of 15000+600000
+ 558837 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 11i,0n,13p,137b,8s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
