@@ -1,6 +1,6 @@
 # Asymptote AI: Gemma 3 for Code Generation
 
-This project aims to leverage Google's Gemma 3 language models, optimized with Unsloth, to generate Asymptote vector graphics code. It features a script to build custom Asymptote code-image datasets and a framework for model fine-tuning and inference.
+This project aims to finetune Google's Gemma 3 language models, optimized with Unsloth, to generate Asymptote vector graphics code. It features a script to build custom Asymptote code-image datasets and a framework for model fine-tuning and inference.
 
 ## Core Features
 
