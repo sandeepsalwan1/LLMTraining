@@ -1,5 +1,7 @@
 # Gemma 3 Finetuning for Asymptote Code Generation
 
+Model weights: https://drive.google.com/drive/folders/1vJnQA5e1ehTXCdvX9g5qgWO3aVxx_p93?usp=sharing
+
 This project aims to finetune Google's Gemma 3 language models, optimized with Unsloth, to generate Asymptote vector graphics code. It features a script to build custom Asymptote code-image datasets and a framework for model fine-tuning and inference.
 
 ## Core Features
